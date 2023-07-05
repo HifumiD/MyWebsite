@@ -87,11 +87,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .header .icons .header-title {
-    transform: scale(0.5); /* Reduce the size by 50% */
-  }
-}
+
 
 .icons {
   display: flex;
@@ -139,12 +135,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
-  .about-me p {
-    font-size: 80%; 
-    margin-top: 5%; 
-  }
-}
+
 
 /* Languages styles */
 .languages {
@@ -261,11 +252,7 @@ body {
   
 }
 
-@media (max-width: 768px) {
-  .banner {
-    width: auto;
-  }
-}
+
 
 /* Image text styles */
 .image-text {
@@ -325,4 +312,43 @@ body {
     font-size: 1em;
     margin-top: 5%;
   }
+}
+
+@media (max-width: 768px) {
+.mydog{
+  align-items: center;
+  width: 80%;
+  margin-left: 11%;
+}
+
+.image-text h1{
+  font-size: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  
+  font-size: 10px;
+}
+
+.language_link{
+  font-size: 60%;
+  text-align: center;
+  margin-left: 0;
+}
+
+.dot{
+  opacity: 0%;
+}
+
+.icons{
+  margin-right: 100%;
+}
+
+.header .header-title{
+  position: absolute;
+  margin-left: 4%;
+}
+
 }

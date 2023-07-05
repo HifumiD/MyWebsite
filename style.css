@@ -30,10 +30,11 @@ body {
   border-radius: 30px;
 
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1%;
+  padding: 0%;
   margin-top: 0;
+  width: 100%;
   gap: 125px;
 }
 
@@ -58,6 +59,9 @@ body {
   transition: border 0.1s ease, font-size 0.1s ease;
 }
 
+
+
+
 .language_link a:hover {
   cursor: pointer;
   font-size: 1.2em;
@@ -70,7 +74,7 @@ body {
 }
 
 .header-title {
-  position: relative;
+  font-size: 0.9em;
   left: 1%;
   color: rgb(206, 206, 206);
   text-shadow: 0 0 0.3em #a3a876, 0 0 0.2em #eb2657;
@@ -81,6 +85,12 @@ body {
 .header .icons {
   margin-right: 2%;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .header .icons .header-title {
+    transform: scale(0.5); /* Reduce the size by 50% */
+  }
 }
 
 .icons {
@@ -173,7 +183,13 @@ body {
   font-weight: 200;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-shadow: 0 0 0.4375em #ffffff, 0 0 0.3125em #fcfcfc; /* Change the pixel values to em */
+  text-shadow: 0 0 0.0375em #ffffff, 0 0 0.3125em #fcfcfc; /* Change the pixel values to em */
+}
+
+.flag-info{
+  color: white;
+  text-shadow: 0 0 0.0375em #ffffff, 0 0 0.3125em #fcfcfc;
+  font-size: 1.1em;
 }
 
 .flags {
@@ -266,3 +282,47 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  .languages {
+    margin-top: 2em;
+  }
+
+  .languages h2 {
+    font-size: 3vh;
+  }
+
+  .flag-info {
+    font-size: 0.6em;
+  }
+
+  .flags {
+    gap:6vw;
+  }
+
+  .romanian,
+  .german,
+  .english,
+  .spanish {
+    height: 5vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-me p {
+    font-size: 0.7em;
+    margin-top: 5%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me p {
+    font-size: 1em;
+    margin-top: 5%;
+  }
+}

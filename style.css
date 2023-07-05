@@ -1,0 +1,268 @@
+/* General styles */
+body {
+  background: linear-gradient(-45deg, #ee7752, #f389b1, #5ccdf7, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: 'Adine';
+  src: url('Bulletto Killa.ttf') format('truetype');
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin-top: 0;
+  gap: 125px;
+}
+
+.language_link {
+  display: flex;
+  gap: 10%;
+  margin-top: 1%;
+}
+
+
+
+.language_link a {
+  background-repeat: no-repeat;
+  background-image: url("https://www.apple.com/v/iphone-xs/b/images/overview/copy_texture_3_medium.jpg");
+  -webkit-background-clip: text;
+  color: transparent !important;
+
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bolder;
+  font-size: 150%;
+  transition: border 0.1s ease, font-size 0.1s ease;
+}
+
+.language_link a:hover {
+  cursor: pointer;
+  font-size: 1.2em;
+  border: 2px solid;
+  border-image: linear-gradient(to right, rgb(219, 187, 127), rgb(206, 62, 86));
+  border-image-slice: 1;
+  padding: 0.5%;
+  border-radius: 3em;
+  transition: border 0.1s ease, font-size 0.2s ease;
+}
+
+.header-title {
+  position: relative;
+  left: 1%;
+  color: rgb(206, 206, 206);
+  text-shadow: 0 0 0.3em #a3a876, 0 0 0.2em #eb2657;
+  font-weight: lighter;
+  font-family: quicksand;
+}
+
+.header .icons {
+  margin-right: 2%;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+  
+}
+
+.youtube-icon{
+  height: 2em;
+  margin-top: 30%;
+}
+
+.github-icon{
+  height: 3em;
+}
+
+.github-icon:hover {
+  height: 7vw;
+  cursor: pointer;
+  transition: height 0.3s ease;
+}
+
+/* About me styles */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+
+  
+}
+
+.about-me p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 10%;
+  font-size: 1.3em;
+  line-height: 1.08365;
+  font-weight: 600;
+  letter-spacing: -.003em;
+  font-family: Quicksand;
+  text-shadow: .2vh 0.2vh 0.4vh rgb(187, 142, 142);
+
+}
+
+@media (max-width: 768px) {
+  .about-me p {
+    font-size: 80%; 
+    margin-top: 5%; 
+  }
+}
+
+/* Languages styles */
+.languages {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25em; /* Change the pixel value to em */
+  margin-top: 5%; /* Change the pixel value to a percentage */
+}
+
+.language_link
+
+.flag-info {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 0.1875em #ffffff, 0 0 0.0625em #f4e1f5; /* Change the pixel values to em */
+  font-size: larger; /* Change the absolute value to a relative keyword */
+}
+
+.flag-container {
+  display: flex;
+  margin-top: 5%; /* Change the pixel value to a percentage */
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625em; /* Change the pixel value to em */
+}
+
+.flag-images {
+  display: flex;
+}
+
+.languages h2 {
+  color: aliceblue;
+  font-size: 2.5vw; /* Change the pixel value to vw */
+  font-weight: 200;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0 0 0.4375em #ffffff, 0 0 0.3125em #fcfcfc; /* Change the pixel values to em */
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw; /* Change the pixel value to vw */
+}
+
+
+
+.romanian {
+  height: 10vh;
+  transition: height 0.3s ease;
+}
+
+.german {
+  height: 10vh;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.english {
+  height: 10vh;
+  transition: height 0.3s ease;
+}
+
+.spanish {
+  height: 10vh;
+  transition: height 0.3s ease;
+}
+
+.romanian:hover {
+  cursor: pointer;
+  height: 11vh;
+  transition: height 0.3s ease;
+}
+
+.german:hover {
+  cursor: pointer;
+  height: 11vh;
+  transition: width 0.3s, height 0.3s ease;
+}
+
+.english:hover {
+  cursor: pointer;
+  height: 11vh;
+  transition: height 0.3s ease;
+}
+
+.spanish:hover {
+  cursor: pointer;
+  height: 11vh;
+  transition: height 0.3s ease;
+}
+
+/* Main image styles */
+.main-image {
+  position: relative;
+}
+
+.mydog {
+  width: 25%;
+  height: 10%;
+  border-radius: 3vh;
+  margin-top: 9vh;
+}
+
+.banner {
+  
+}
+
+@media (max-width: 768px) {
+  .banner {
+    width: auto;
+  }
+}
+
+/* Image text styles */
+.image-text {
+  font-size: 4vh;
+  
+  top: 50%;
+  left: 50%;
+  
+  text-align: center;
+  width: 100%;
+
+  color: white;
+  text-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 1);
+}
+
+
